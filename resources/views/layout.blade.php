@@ -12,7 +12,7 @@ Author: Webstrot
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Home Page 2 </title>
+    <title> @yield('title') </title>
     <!-- Place favicon.ico in the root directory -->
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('images/favicon.png')}}">
 
@@ -21,6 +21,7 @@ Author: Webstrot
     <link href="{{ asset('css/fonts.css')}}" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="{{ asset('css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('css/jquery-ui.min.css')}}" rel="stylesheet">
     <!-- Animation Css -->
     <link href="{{ asset('css/animate.css')}}" rel="stylesheet">
     <!-- Revolution slider Css -->
@@ -34,6 +35,9 @@ Author: Webstrot
     <link href="{{asset('css/magnific-popup.css')}}" rel="stylesheet">
     <!-- Style Css -->
     <link href="{{asset('css/homepage_style_2.css')}}" rel="stylesheet">
+    <link href="css/shop.css" rel="stylesheet">
+    <!-- Common Style CSS -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -80,7 +84,7 @@ Author: Webstrot
                                     <ul class="dropdown-menu">
                                         <li class="signin_dropdown">
                                             <a href="#" class="btn btn-primary"> <span>Login with Facebook</span> <i class="fa fa-facebook"></i> </a>
-                                            <a href="#" class="btn btn-primary google-plus"> Login  with Google <i class="fa fa-google-plus"></i> </a>
+                                            <a href="#" class="btn btn-primary google-plus"> Login with Google <i class="fa fa-google-plus"></i> </a>
                                             <h2>or</h2>
                                             <div class="formsix-pos">
                                                 <div class="form-group i-email">
@@ -98,8 +102,8 @@ Author: Webstrot
                                                     <span class="control__indicator"></span>
                                                 </label>
                                                 <a href="#" class="forget_password">
-													Forgot Password
-												</a>
+                                                    Forgot Password
+                                                </a>
                                             </div>
                                             <div class="login_wrapper">
                                                 <a href="#" class="btn btn-primary login_btn"> Login </a>
@@ -131,8 +135,8 @@ Author: Webstrot
                         <ul class="nav navbar-nav navbar-right">
                             <li class="active dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-										Home
-									</a>
+                                    Home
+                                </a>
                                 <ul class="dropdown-menu">
                                     <li>
                                         <a href="homepage1.html"> Homepage 01</a>
@@ -149,52 +153,52 @@ Author: Webstrot
                                     <li>
                                         <a href="homepage5.html">Homepage 05</a>
                                     </li>
-                                    <li> 
-										<a href="homepage6.html"> Home page 06 (Fashion) </a>
-									</li>
-									<li> 
-										<a href="homepage7_electronic.html"> Homepage 07 (Electronic)
-										<span class="new"> New </span> </a>
-									</li>
-									<li> 
-										<a href="homepage8_organic.html"> Homepage 08 (Organic)
-										<span class="new"> New </span> </a>
-									</li>
-									<li> 
-										<a href="homepage9_sport.html"> Homepage 09 (Sport)
-										<span class="new"> New </span> </a>
-									</li>
+                                    <li>
+                                        <a href="homepage6.html"> Home page 06 (Fashion) </a>
+                                    </li>
+                                    <li>
+                                        <a href="homepage7_electronic.html"> Homepage 07 (Electronic)
+                                            <span class="new"> New </span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="homepage8_organic.html"> Homepage 08 (Organic)
+                                            <span class="new"> New </span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="homepage9_sport.html"> Homepage 09 (Sport)
+                                            <span class="new"> New </span> </a>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-												  Pages
-											  </a>
+                                    Pages
+                                </a>
                                 <ul class="dropdown-menu">
                                     <li>
                                         <a href="#">
-													  About Us
-													  <span><i class="fa fa-caret-right"></i>
-													  </span>
-													</a>
+                                            About Us
+                                            <span><i class="fa fa-caret-right"></i>
+                                            </span>
+                                        </a>
                                         <ul class="dropdown-menu-right">
                                             <li>
-                                                <a href="aboutus1.html">  About Style 01</a>
+                                                <a href="aboutus1.html"> About Style 01</a>
                                             </li>
                                             <li>
-                                                <a href="aboutus2.html">  About Style 02 </a>
+                                                <a href="aboutus2.html"> About Style 02 </a>
                                             </li>
                                             <li>
-                                                <a href="aboutus3.html">  About Style 03 </a>
+                                                <a href="aboutus3.html"> About Style 03 </a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li>
                                         <a href="#">
-													  Services
-													  <span><i class="fa fa-caret-right"></i>
-													  </span>
-													</a>
+                                            Services
+                                            <span><i class="fa fa-caret-right"></i>
+                                            </span>
+                                        </a>
                                         <ul class="dropdown-menu-right">
                                             <li>
                                                 <a href="service_page1.html"> Services 01</a>
@@ -203,16 +207,16 @@ Author: Webstrot
                                                 <a href="service_page2.html"> Services 02 </a>
                                             </li>
                                             <li>
-                                                <a href="service_page3.html">  Services 03</a>
+                                                <a href="service_page3.html"> Services 03</a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li>
                                         <a href="#">
-													  Team
-													  <span><i class="fa fa-caret-right"></i>
-													  </span>
-													</a>
+                                            Team
+                                            <span><i class="fa fa-caret-right"></i>
+                                            </span>
+                                        </a>
                                         <ul class="dropdown-menu-right">
                                             <li>
                                                 <a href="team_overlay_style.html"> Overly Style</a>
@@ -221,97 +225,97 @@ Author: Webstrot
                                                 <a href="team_transparent_style.html"> Transparent Style</a>
                                             </li>
                                             <li>
-                                                <a href="team_circle_style.html">  Circle Style </a>
+                                                <a href="team_circle_style.html"> Circle Style </a>
                                             </li>
                                             <li>
-                                                <a href="team_classic_style.html">  Classic Style </a>
+                                                <a href="team_classic_style.html"> Classic Style </a>
                                             </li>
                                             <li>
-                                                <a href="team_creative_style.html">  Creative Style </a>
+                                                <a href="team_creative_style.html"> Creative Style </a>
                                             </li>
                                             <li>
-                                                <a href="team_single.html">  Team Single </a>
+                                                <a href="team_single.html"> Team Single </a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li>
                                         <a href="faq.html">
-												FAQ
-											</a>
+                                            FAQ
+                                        </a>
                                     </li>
                                     <li>
                                         <a href="#">
-													 Contact Us 
-													  <span><i class="fa fa-caret-right"></i>
-													  </span>
-													</a>
+                                            Contact Us
+                                            <span><i class="fa fa-caret-right"></i>
+                                            </span>
+                                        </a>
                                         <ul class="dropdown-menu-right">
                                             <li>
                                                 <a href="contact_us1.html"> Contact Us 01</a>
                                             </li>
                                             <li>
-                                                <a href="contact_us2.html">  Contact Us 02</a>
+                                                <a href="contact_us2.html"> Contact Us 02</a>
                                             </li>
                                             <li>
-                                                <a href="contact_us3.html">  Contact Us 03 </a>
+                                                <a href="contact_us3.html"> Contact Us 03 </a>
                                             </li>
                                             <li>
                                                 <a href="contact_us4.html"> Contact Us 04 </a>
                                             </li>
                                             <li>
-                                                <a href="contact_us5.html">  Contact Us 05</a>
+                                                <a href="contact_us5.html"> Contact Us 05</a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li>
                                         <a href="#">
-													 Extra Pages 
-													  <span><i class="fa fa-caret-right"></i>
-													  </span>
-													</a>
+                                            Extra Pages
+                                            <span><i class="fa fa-caret-right"></i>
+                                            </span>
+                                        </a>
                                         <ul class="dropdown-menu-right">
                                             <li>
                                                 <a href="404_style1.html"> 404 style 01</a>
                                             </li>
                                             <li>
-                                                <a href="404_style2.html">  404 style 02</a>
+                                                <a href="404_style2.html"> 404 style 02</a>
                                             </li>
                                             <li>
-                                                <a href="404_style3.html">  404 Animated </a>
+                                                <a href="404_style3.html"> 404 Animated </a>
                                             </li>
                                             <li>
-                                                <a href="404_style4.html">  404 Full Width</a>
+                                                <a href="404_style4.html"> 404 Full Width</a>
                                             </li>
                                             <li>
-                                                <a href="coming_soon_style1.html">  Coming Soon 01</a>
+                                                <a href="coming_soon_style1.html"> Coming Soon 01</a>
                                             </li>
                                             <li>
-                                                <a href="coming_soon_style2.html">  Coming Soon 02</a>
+                                                <a href="coming_soon_style2.html"> Coming Soon 02</a>
                                             </li>
                                             <li>
-                                                <a href="under_construction.html">  Under Construction </a>
+                                                <a href="under_construction.html"> Under Construction </a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li>
                                         <a href="login_and_register.html">
-												Login/Register
-											</a>
+                                            Login/Register
+                                        </a>
                                     </li>
 
                                 </ul>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-													Features
-											  </a>
+                                    Features
+                                </a>
                                 <ul class="dropdown-menu">
                                     <li>
                                         <a href="#">
-													 Headers
-													  <span><i class="fa fa-caret-right"></i>
-													  </span>
-													</a>
+                                            Headers
+                                            <span><i class="fa fa-caret-right"></i>
+                                            </span>
+                                        </a>
                                         <ul class="dropdown-menu-right">
                                             <li>
                                                 <a href="sliders_basic/basic_slider_8.html" target="_blank"> Default Header</a>
@@ -338,10 +342,10 @@ Author: Webstrot
                                     </li>
                                     <li>
                                         <a href="#">
-													 Revolution Slider
-													  <span><i class="fa fa-caret-right"></i>
-													  </span>
-													</a>
+                                            Revolution Slider
+                                            <span><i class="fa fa-caret-right"></i>
+                                            </span>
+                                        </a>
                                         <ul class="dropdown-menu-right">
                                             <li>
                                                 <a href="sliders_revolution/creative_freedom_slider.html" target="_blank"> Creative Freedom Slider</a>
@@ -377,22 +381,22 @@ Author: Webstrot
                                     </li>
                                     <li>
                                         <a href="#">
-													 Basic Sliders
-													  <span><i class="fa fa-caret-right"></i>
-													  </span>
-													</a>
+                                            Basic Sliders
+                                            <span><i class="fa fa-caret-right"></i>
+                                            </span>
+                                        </a>
                                         <ul class="dropdown-menu-right">
                                             <li>
-                                                <a href="sliders_basic/basic_slider_1.html" target="_blank">  Fix Image 01</a>
+                                                <a href="sliders_basic/basic_slider_1.html" target="_blank"> Fix Image 01</a>
                                             </li>
                                             <li>
-                                                <a href="sliders_basic/basic_slider_5.html" target="_blank">  Fix Image 02</a>
+                                                <a href="sliders_basic/basic_slider_5.html" target="_blank"> Fix Image 02</a>
                                             </li>
                                             <li>
                                                 <a href="sliders_basic/basic_slider_4.html" target="_blank"> Owl Slider</a>
                                             </li>
                                             <li>
-                                                <a href="sliders_basic/basic_slider_8.html" target="_blank">  jQuery Camera Slider </a>
+                                                <a href="sliders_basic/basic_slider_8.html" target="_blank"> jQuery Camera Slider </a>
                                             </li>
                                             <li>
                                                 <a href="sliders_basic/basic_slider_2.html" target="_blank"> Carousel Slider 01 </a>
@@ -404,16 +408,16 @@ Author: Webstrot
                                                 <a href="sliders_basic/basic_slider_6.html" target="_blank"> Carousel Slider 03 </a>
                                             </li>
                                             <li>
-                                                <a href="sliders_basic/basic_slider_7.html" target="_blank">  Carousel Slider 04 </a>
+                                                <a href="sliders_basic/basic_slider_7.html" target="_blank"> Carousel Slider 04 </a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li>
                                         <a href="#">
-													 Page Header
-													  <span><i class="fa fa-caret-right"></i>
-													  </span>
-													</a>
+                                            Page Header
+                                            <span><i class="fa fa-caret-right"></i>
+                                            </span>
+                                        </a>
                                         <ul class="dropdown-menu-right">
                                             <li>
                                                 <a href="shortcode/page_header.html#page_header1_section"> Light Background</a>
@@ -422,16 +426,16 @@ Author: Webstrot
                                                 <a href="shortcode/page_header.html#page_header2_section"> Dark Background </a>
                                             </li>
                                             <li>
-                                                <a href="shortcode/page_header.html#page_header3_section">  Gradient Background </a>
+                                                <a href="shortcode/page_header.html#page_header3_section"> Gradient Background </a>
                                             </li>
                                             <li>
-                                                <a href="shortcode/page_header.html#page_header4_section">  Reverse Page Header </a>
+                                                <a href="shortcode/page_header.html#page_header4_section"> Reverse Page Header </a>
                                             </li>
                                             <li>
-                                                <a href="shortcode/page_header.html#page_header5_section">  Image Background </a>
+                                                <a href="shortcode/page_header.html#page_header5_section"> Image Background </a>
                                             </li>
                                             <li>
-                                                <a href="shortcode/page_header.html#page_header6_section">  Fullwidth Page Header </a>
+                                                <a href="shortcode/page_header.html#page_header6_section"> Fullwidth Page Header </a>
                                             </li>
                                             <li>
                                                 <a href="shortcode/page_header.html#page_header7_section"> Center Page Header</a>
@@ -440,25 +444,25 @@ Author: Webstrot
                                     </li>
                                     <li>
                                         <a href="#">
-													 Footer Styles
-													  <span><i class="fa fa-caret-right"></i>
-													  </span>
-													</a>
+                                            Footer Styles
+                                            <span><i class="fa fa-caret-right"></i>
+                                            </span>
+                                        </a>
                                         <ul class="dropdown-menu-right">
                                             <li>
-                                                <a href="shortcode/footer.html#footer_1_section">  Dark Footer</a>
+                                                <a href="shortcode/footer.html#footer_1_section"> Dark Footer</a>
                                             </li>
                                             <li>
-                                                <a href="shortcode/footer.html#footer_2_section">  Shop Footer </a>
+                                                <a href="shortcode/footer.html#footer_2_section"> Shop Footer </a>
                                             </li>
                                             <li>
-                                                <a href="shortcode/footer.html#footer_3_section">  Light Footer </a>
+                                                <a href="shortcode/footer.html#footer_3_section"> Light Footer </a>
                                             </li>
                                             <li>
-                                                <a href="shortcode/footer.html#footer_4_section">  3 Column Footer </a>
+                                                <a href="shortcode/footer.html#footer_4_section"> 3 Column Footer </a>
                                             </li>
                                             <li>
-                                                <a href="shortcode/footer.html#footer_5_section">  Full Width </a>
+                                                <a href="shortcode/footer.html#footer_5_section"> Full Width </a>
                                             </li>
                                         </ul>
                                     </li>
@@ -496,7 +500,7 @@ Author: Webstrot
                                                     <a href="portfolio_grid_sidebar.html"> Side Bar </a>
                                                 </li>
                                                 <li>
-                                                    <a href="portfolio_grid_full_width_nomargin.html"> Full Width no Margin  </a>
+                                                    <a href="portfolio_grid_full_width_nomargin.html"> Full Width no Margin </a>
                                                 </li>
                                             </ul>
 
@@ -512,7 +516,7 @@ Author: Webstrot
                                                     <a href="portfolio_masonry_nomargin_3column.html"> No Margin III Column </a>
                                                 </li>
                                                 <li>
-                                                    <a href="portfolio_masonry_nomargin_4column.html"> No  Margin IV Column </a>
+                                                    <a href="portfolio_masonry_nomargin_4column.html"> No Margin IV Column </a>
                                                 </li>
                                                 <li>
                                                     <a href="portfolio_masonry_nomargin_5column.html"> No Margin V Column </a>
@@ -521,7 +525,7 @@ Author: Webstrot
                                                     <a href="portfolio_masonry_sidebar.html"> Side Bar </a>
                                                 </li>
                                                 <li>
-                                                    <a href="portfolio_masonry_full_width_nomargin.html"> Full Width no Margin  </a>
+                                                    <a href="portfolio_masonry_full_width_nomargin.html"> Full Width no Margin </a>
                                                 </li>
                                             </ul>
                                             <ul class="col-sm-4">
@@ -533,7 +537,7 @@ Author: Webstrot
                                                     <a href="portfolio_single_image.html"> Image Post </a>
                                                 </li>
                                                 <li>
-                                                    <a href="portfolio_single_slider.html"> Slider Post  </a>
+                                                    <a href="portfolio_single_slider.html"> Slider Post </a>
                                                 </li>
                                                 <li>
                                                     <a href="portfolio_single_vedio.html"> Video Post </a>
@@ -585,13 +589,13 @@ Author: Webstrot
                                                     <a href="shortcode/features_with_icon.html">Features With Icon </a>
                                                 </li>
                                                 <li>
-                                                    <a href="shortcode/features_with_images.html"> Features With Images  </a>
+                                                    <a href="shortcode/features_with_images.html"> Features With Images </a>
                                                 </li>
                                                 <li>
                                                     <a href="shortcode/footer.html">Footers </a>
                                                 </li>
                                                 <li>
-                                                    <a href="shortcode/forms.html"> Forms  </a>
+                                                    <a href="shortcode/forms.html"> Forms </a>
                                                 </li>
                                                 <li>
                                                     <a href="shortcode/icon.html">Icons </a>
@@ -612,7 +616,7 @@ Author: Webstrot
                                                     <a href="shortcode/portfolio.html"> Portfolio </a>
                                                 </li>
                                                 <li>
-                                                    <a href="shortcode/pricing.html"> Pricing Tables  </a>
+                                                    <a href="shortcode/pricing.html"> Pricing Tables </a>
                                                 </li>
                                                 <li>
                                                     <a href="shortcode/progress.html"> Progress Bars </a>
@@ -633,22 +637,22 @@ Author: Webstrot
                                                     <a href="404_style1.html"> 404 style 01</a>
                                                 </li>
                                                 <li>
-                                                    <a href="404_style2.html">  404 style 02</a>
+                                                    <a href="404_style2.html"> 404 style 02</a>
                                                 </li>
                                                 <li>
-                                                    <a href="404_style3.html">  404 Animated </a>
+                                                    <a href="404_style3.html"> 404 Animated </a>
                                                 </li>
                                                 <li>
-                                                    <a href="404_style4.html">  404 Full Width</a>
+                                                    <a href="404_style4.html"> 404 Full Width</a>
                                                 </li>
                                                 <li>
-                                                    <a href="coming_soon_style1.html">  Coming Soon 01</a>
+                                                    <a href="coming_soon_style1.html"> Coming Soon 01</a>
                                                 </li>
                                                 <li>
-                                                    <a href="coming_soon_style2.html">  Coming Soon 02</a>
+                                                    <a href="coming_soon_style2.html"> Coming Soon 02</a>
                                                 </li>
                                                 <li>
-                                                    <a href="under_construction.html">  Under Construction </a>
+                                                    <a href="under_construction.html"> Under Construction </a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -660,10 +664,10 @@ Author: Webstrot
                                 <ul class="dropdown-menu">
                                     <li>
                                         <a href="#">
-													  Classic Style
-													  <span><i class="fa fa-caret-right"></i>
-													  </span>
-													</a>
+                                            Classic Style
+                                            <span><i class="fa fa-caret-right"></i>
+                                            </span>
+                                        </a>
                                         <ul class="dropdown-menu-left">
                                             <li>
                                                 <a href="blog_style2.html">Blog Left Sidebar</a>
@@ -678,10 +682,10 @@ Author: Webstrot
                                     </li>
                                     <li>
                                         <a href="#">
-														Masonry Grid
-														<span><i class="fa fa-caret-right"></i>
-														</span>
-													</a>
+                                            Masonry Grid
+                                            <span><i class="fa fa-caret-right"></i>
+                                            </span>
+                                        </a>
                                         <ul class="dropdown-menu-left">
                                             <li>
                                                 <a href="blog_style5.html">Blog Left Sidebar</a>
@@ -696,10 +700,10 @@ Author: Webstrot
                                     </li>
                                     <li>
                                         <a href="#">
-													Creative Style
-													  <span><i class="fa fa-caret-right"></i>
-													  </span>
-													</a>
+                                            Creative Style
+                                            <span><i class="fa fa-caret-right"></i>
+                                            </span>
+                                        </a>
                                         <ul class="dropdown-menu-left">
                                             <li>
                                                 <a href="blog_style8.html">Blog Left Sidebar</a>
@@ -714,10 +718,10 @@ Author: Webstrot
                                     </li>
                                     <li>
                                         <a href="#">
-														Modern Style
-														<span><i class="fa fa-caret-right"></i>
-														</span>
-													</a>
+                                            Modern Style
+                                            <span><i class="fa fa-caret-right"></i>
+                                            </span>
+                                        </a>
                                         <ul class="dropdown-menu-left">
                                             <li>
                                                 <a href="blog_style11.html">Blog Left Sidebar</a>
@@ -732,10 +736,10 @@ Author: Webstrot
                                     </li>
                                     <li>
                                         <a href="#">
-														Single Page
-														<span><i class="fa fa-caret-right"></i>
-														</span>
-													</a>
+                                            Single Page
+                                            <span><i class="fa fa-caret-right"></i>
+                                            </span>
+                                        </a>
                                         <ul class="dropdown-menu-left">
                                             <li>
                                                 <a href="blog_single2.html">Blog Left Sidebar</a>
@@ -752,8 +756,8 @@ Author: Webstrot
                             </li>
                             <li class="dropdown shop_dropdown_wrapper">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-												  Shop
-											  </a>
+                                    Shop
+                                </a>
                                 <ul class="dropdown-menu">
                                     <li>
                                         <a href="shop_sidebar.html"> Shop Sidebar</a>
@@ -767,18 +771,18 @@ Author: Webstrot
                                     <li>
                                         <a href="product_single_sidebar.html">Product Single Sidebar</a>
                                     </li>
-									<li>
-										<a href="product_single_electranics.html">Product Single Electronic 
-										<span class="new"> New </span> </a>
-									</li>
-									<li> 
-										<a href="product_single_organic.html">Product Single Organic
-										<span class="new"> New </span> </a>
-									</li>
-									<li>
-										<a href="product_single_sport.html">Product Single Sport
-										<span class="new"> New </span> </a>
-									</li>
+                                    <li>
+                                        <a href="product_single_electranics.html">Product Single Electronic
+                                            <span class="new"> New </span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="product_single_organic.html">Product Single Organic
+                                            <span class="new"> New </span> </a>
+                                    </li>
+                                    <li>
+                                        <a href="product_single_sport.html">Product Single Sport
+                                            <span class="new"> New </span> </a>
+                                    </li>
                                     <li>
                                         <a href="shopping_cart.html"> Shopping Cart</a>
                                     </li>
@@ -801,9 +805,9 @@ Author: Webstrot
                             </li>
                             <!-- Cart Option -->
                             <li class="dropdown cart_dropdown_wrapper">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-shopping-cart"></i> 
-										<span id="cart-badge" class="badge badge-warning">3</span>
-									</a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-shopping-cart"></i>
+                                    <span id="cart-badge" class="badge badge-warning">3</span>
+                                </a>
                                 <ul class="dropdown-menu">
                                     <li>
                                         <div class="cart-dropdown">
@@ -907,18 +911,18 @@ Author: Webstrot
                                 <li>
                                     <a href="homepage5.html">Homepage 05</a>
                                 </li>
-                                <li> 
-									<a href="homepage6.html"> Home page 06 (Fashion) </a>
-								</li>
-								<li> 
-									<a href="homepage7_electronic.html"> Homepage 07 (Electronic)</a>
-								</li>
-								<li> 
-									<a href="homepage8_organic.html"> Homepage 08 (Organic)</a>
-								</li>
-								<li> 
-									<a href="homepage9_sport.html"> Homepage 09  (Sport)</a>
-								</li>
+                                <li>
+                                    <a href="homepage6.html"> Home page 06 (Fashion) </a>
+                                </li>
+                                <li>
+                                    <a href="homepage7_electronic.html"> Homepage 07 (Electronic)</a>
+                                </li>
+                                <li>
+                                    <a href="homepage8_organic.html"> Homepage 08 (Organic)</a>
+                                </li>
+                                <li>
+                                    <a href="homepage9_sport.html"> Homepage 09 (Sport)</a>
+                                </li>
                             </ul>
                         </li>
                         <li class='has-sub'><a href='#'>Pages</a>
@@ -927,13 +931,13 @@ Author: Webstrot
                                     <a href='#'>About Us</a>
                                     <ul>
                                         <li>
-                                            <a href="aboutus1.html">  About Style 01</a>
+                                            <a href="aboutus1.html"> About Style 01</a>
                                         </li>
                                         <li>
-                                            <a href="aboutus2.html">  About Style 02 </a>
+                                            <a href="aboutus2.html"> About Style 02 </a>
                                         </li>
                                         <li>
-                                            <a href="aboutus3.html">  About Style 03 </a>
+                                            <a href="aboutus3.html"> About Style 03 </a>
                                         </li>
                                     </ul>
                                 </li>
@@ -947,7 +951,7 @@ Author: Webstrot
                                             <a href="service_page2.html"> Services 02 </a>
                                         </li>
                                         <li>
-                                            <a href="service_page3.html">  Services 03</a>
+                                            <a href="service_page3.html"> Services 03</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -961,16 +965,16 @@ Author: Webstrot
                                             <a href="team_transparent_style.html"> Transparent Style</a>
                                         </li>
                                         <li>
-                                            <a href="team_circle_style.html">  Circle Style </a>
+                                            <a href="team_circle_style.html"> Circle Style </a>
                                         </li>
                                         <li>
-                                            <a href="team_classic_style.html">  Classic Style </a>
+                                            <a href="team_classic_style.html"> Classic Style </a>
                                         </li>
                                         <li>
-                                            <a href="team_creative_style.html">  Creative Style </a>
+                                            <a href="team_creative_style.html"> Creative Style </a>
                                         </li>
                                         <li>
-                                            <a href="team_single.html">  Team Single </a>
+                                            <a href="team_single.html"> Team Single </a>
                                         </li>
                                     </ul>
                                 </li>
@@ -982,42 +986,42 @@ Author: Webstrot
                                             <a href="contact_us1.html"> Contact Us 01</a>
                                         </li>
                                         <li>
-                                            <a href="contact_us2.html">  Contact Us 02</a>
+                                            <a href="contact_us2.html"> Contact Us 02</a>
                                         </li>
                                         <li>
-                                            <a href="contact_us3.html">  Contact Us 03 </a>
+                                            <a href="contact_us3.html"> Contact Us 03 </a>
                                         </li>
                                         <li>
                                             <a href="contact_us4.html"> Contact Us 04 </a>
                                         </li>
                                         <li>
-                                            <a href="contact_us5.html">  Contact Us 05</a>
+                                            <a href="contact_us5.html"> Contact Us 05</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class='has-sub'>
-                                    <a href='#'>Extra Pages  </a>
+                                    <a href='#'>Extra Pages </a>
                                     <ul>
                                         <li>
                                             <a href="404_style1.html"> 404 style 01</a>
                                         </li>
                                         <li>
-                                            <a href="404_style2.html">  404 style 02</a>
+                                            <a href="404_style2.html"> 404 style 02</a>
                                         </li>
                                         <li>
-                                            <a href="404_style3.html">  404 Animated </a>
+                                            <a href="404_style3.html"> 404 Animated </a>
                                         </li>
                                         <li>
-                                            <a href="404_style4.html">  404 Full Width</a>
+                                            <a href="404_style4.html"> 404 Full Width</a>
                                         </li>
                                         <li>
-                                            <a href="coming_soon_style1.html">  Coming Soon 01</a>
+                                            <a href="coming_soon_style1.html"> Coming Soon 01</a>
                                         </li>
                                         <li>
-                                            <a href="coming_soon_style1.html">  Coming Soon 02</a>
+                                            <a href="coming_soon_style1.html"> Coming Soon 02</a>
                                         </li>
                                         <li>
-                                            <a href="under_construction.html">  Under Construction </a>
+                                            <a href="under_construction.html"> Under Construction </a>
                                         </li>
                                     </ul>
                                 </li>
@@ -1091,16 +1095,16 @@ Author: Webstrot
                                     <a href='#'>Basic Sliders</a>
                                     <ul>
                                         <li>
-                                            <a href="sliders_basic/basic_slider_1.html" target="_blank">  Fix Image 01</a>
+                                            <a href="sliders_basic/basic_slider_1.html" target="_blank"> Fix Image 01</a>
                                         </li>
                                         <li>
-                                            <a href="sliders_basic/basic_slider_5.html" target="_blank">  Fix Image 02</a>
+                                            <a href="sliders_basic/basic_slider_5.html" target="_blank"> Fix Image 02</a>
                                         </li>
                                         <li>
                                             <a href="sliders_basic/basic_slider_4.html" target="_blank"> Owl Slider</a>
                                         </li>
                                         <li>
-                                            <a href="sliders_basic/basic_slider_8.html" target="_blank">  jQuery Camera Slider </a>
+                                            <a href="sliders_basic/basic_slider_8.html" target="_blank"> jQuery Camera Slider </a>
                                         </li>
                                         <li>
                                             <a href="sliders_basic/basic_slider_2.html" target="_blank"> Carousel Slider 01 </a>
@@ -1112,7 +1116,7 @@ Author: Webstrot
                                             <a href="sliders_basic/basic_slider_6.html" target="_blank"> Carousel Slider 03 </a>
                                         </li>
                                         <li>
-                                            <a href="sliders_basic/basic_slider_7.html" target="_blank">  Carousel Slider 04 </a>
+                                            <a href="sliders_basic/basic_slider_7.html" target="_blank"> Carousel Slider 04 </a>
                                         </li>
                                     </ul>
                                 </li>
@@ -1126,16 +1130,16 @@ Author: Webstrot
                                             <a href="shortcode/page_header.html#page_header2_section"> Dark Background </a>
                                         </li>
                                         <li>
-                                            <a href="shortcode/page_header.html#page_header3_section">  Gradient Background </a>
+                                            <a href="shortcode/page_header.html#page_header3_section"> Gradient Background </a>
                                         </li>
                                         <li>
-                                            <a href="shortcode/page_header.html#page_header4_section">  Reverse Page Header </a>
+                                            <a href="shortcode/page_header.html#page_header4_section"> Reverse Page Header </a>
                                         </li>
                                         <li>
-                                            <a href="shortcode/page_header.html#page_header5_section">  Image Background </a>
+                                            <a href="shortcode/page_header.html#page_header5_section"> Image Background </a>
                                         </li>
                                         <li>
-                                            <a href="shortcode/page_header.html#page_header6_section">  Fullwidth Page Header </a>
+                                            <a href="shortcode/page_header.html#page_header6_section"> Fullwidth Page Header </a>
                                         </li>
                                         <li>
                                             <a href="shortcode/page_header.html#page_header7_section"> Center Page Header</a>
@@ -1143,22 +1147,22 @@ Author: Webstrot
                                     </ul>
                                 </li>
                                 <li class='has-sub'>
-                                    <a href='#'>Footer Styles  </a>
+                                    <a href='#'>Footer Styles </a>
                                     <ul>
                                         <li>
-                                            <a href="shortcode/footer.html#footer_1_section">  Dark Footer</a>
+                                            <a href="shortcode/footer.html#footer_1_section"> Dark Footer</a>
                                         </li>
                                         <li>
-                                            <a href="shortcode/footer.html#footer_2_section">  Shop Footer </a>
+                                            <a href="shortcode/footer.html#footer_2_section"> Shop Footer </a>
                                         </li>
                                         <li>
-                                            <a href="shortcode/footer.html#footer_3_section">  Light Footer </a>
+                                            <a href="shortcode/footer.html#footer_3_section"> Light Footer </a>
                                         </li>
                                         <li>
-                                            <a href="shortcode/footer.html#footer_4_section">  3 Column Footer </a>
+                                            <a href="shortcode/footer.html#footer_4_section"> 3 Column Footer </a>
                                         </li>
                                         <li>
-                                            <a href="shortcode/footer.html#footer_5_section">  Full Width </a>
+                                            <a href="shortcode/footer.html#footer_5_section"> Full Width </a>
                                         </li>
                                     </ul>
                                 </li>
@@ -1194,7 +1198,7 @@ Author: Webstrot
                                             <a href="portfolio_grid_sidebar.html"> Side Bar </a>
                                         </li>
                                         <li>
-                                            <a href="portfolio_grid_full_width_nomargin.html"> Full Width no Margin  </a>
+                                            <a href="portfolio_grid_full_width_nomargin.html"> Full Width no Margin </a>
                                         </li>
                                     </ul>
                                 </li>
@@ -1211,7 +1215,7 @@ Author: Webstrot
                                             <a href="portfolio_masonry_nomargin_3column.html"> No Margin III Column </a>
                                         </li>
                                         <li>
-                                            <a href="portfolio_masonry_nomargin_4column.html"> No  Margin IV Column </a>
+                                            <a href="portfolio_masonry_nomargin_4column.html"> No Margin IV Column </a>
                                         </li>
                                         <li>
                                             <a href="portfolio_masonry_nomargin_5column.html"> No Margin V Column </a>
@@ -1220,7 +1224,7 @@ Author: Webstrot
                                             <a href="portfolio_masonry_sidebar.html"> Side Bar </a>
                                         </li>
                                         <li>
-                                            <a href="portfolio_masonry_full_width_nomargin.html"> Full Width no Margin  </a>
+                                            <a href="portfolio_masonry_full_width_nomargin.html"> Full Width no Margin </a>
                                         </li>
                                     </ul>
                                 </li>
@@ -1234,7 +1238,7 @@ Author: Webstrot
                                             <a href="portfolio_single_image.html"> Image Post </a>
                                         </li>
                                         <li>
-                                            <a href="portfolio_single_slider.html"> Slider Post  </a>
+                                            <a href="portfolio_single_slider.html"> Slider Post </a>
                                         </li>
                                         <li>
                                             <a href="portfolio_single_vedio.html"> Video Post </a>
@@ -1284,13 +1288,13 @@ Author: Webstrot
                                             <a href="shortcode/features_with_icon.html">Features With Icon </a>
                                         </li>
                                         <li>
-                                            <a href="shortcode/features_with_images.html"> Features With Images  </a>
+                                            <a href="shortcode/features_with_images.html"> Features With Images </a>
                                         </li>
                                         <li>
                                             <a href="shortcode/footer.html">Footers </a>
                                         </li>
                                         <li>
-                                            <a href="shortcode/forms.html"> Forms  </a>
+                                            <a href="shortcode/forms.html"> Forms </a>
                                         </li>
                                         <li>
                                             <a href="shortcode/icon.html">Icons </a>
@@ -1313,7 +1317,7 @@ Author: Webstrot
                                             <a href="shortcode/portfolio.html"> Portfolio </a>
                                         </li>
                                         <li>
-                                            <a href="shortcode/pricing.html"> Pricing Tables  </a>
+                                            <a href="shortcode/pricing.html"> Pricing Tables </a>
                                         </li>
                                         <li>
                                             <a href="shortcode/progress.html"> Progress Bars </a>
@@ -1336,22 +1340,22 @@ Author: Webstrot
                                             <a href="404_style1.html"> 404 style 01</a>
                                         </li>
                                         <li>
-                                            <a href="404_style2.html">  404 style 02</a>
+                                            <a href="404_style2.html"> 404 style 02</a>
                                         </li>
                                         <li>
-                                            <a href="404_style3.html">  404 Animated </a>
+                                            <a href="404_style3.html"> 404 Animated </a>
                                         </li>
                                         <li>
-                                            <a href="404_style4.html">  404 Full Width</a>
+                                            <a href="404_style4.html"> 404 Full Width</a>
                                         </li>
                                         <li>
-                                            <a href="coming_soon_style1.html">  Coming Soon 01</a>
+                                            <a href="coming_soon_style1.html"> Coming Soon 01</a>
                                         </li>
                                         <li>
-                                            <a href="coming_soon_style1.html">  Coming Soon 02</a>
+                                            <a href="coming_soon_style1.html"> Coming Soon 02</a>
                                         </li>
                                         <li>
-                                            <a href="under_construction.html">  Under Construction </a>
+                                            <a href="under_construction.html"> Under Construction </a>
                                         </li>
 
                                     </ul>
@@ -1449,15 +1453,15 @@ Author: Webstrot
                                 <li>
                                     <a href="product_single_sidebar.html">Product Single Sidebar</a>
                                 </li>
-								<li> 
-									<a href="product_single_electranics.html">Product Single Electronic</a>
-								</li>
-								<li> 
-									<a href="product_single_organic.html">Product Single Organic</a>
-								</li>
-								<li> 
-									<a href="product_single_sport.html">Product Single Sport</a>
-								</li>
+                                <li>
+                                    <a href="product_single_electranics.html">Product Single Electronic</a>
+                                </li>
+                                <li>
+                                    <a href="product_single_organic.html">Product Single Organic</a>
+                                </li>
+                                <li>
+                                    <a href="product_single_sport.html">Product Single Sport</a>
+                                </li>
                                 <li>
                                     <a href="shopping_cart.html"> Shopping Cart</a>
                                 </li>
@@ -1476,3 +1480,316 @@ Author: Webstrot
         </div>
     </div>
     <!-- header end -->
+
+    @section('content')
+
+    @show
+
+    <!-- footer start -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer_wrapper_first">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-xs-12 col-sm-6">
+                        <div class="wrapper_first_image">
+                            <img src="images/logo_light.png" class="img-responsive" alt="footer3_logo_img" />
+                        </div>
+                    </div>
+                    <div class="col-sm-6 visible-sm">
+                        <div class="wrapper_first_icon">
+                            <i class="fa fa-map-marker"></i><span>Get Appointment</span>
+                        </div>
+                        <div class="wrapper_first_icon">
+                            <i class="fa fa-phone"></i><span>Contact our Office</span>
+                        </div>
+                        <div class="wrapper_first_icon">
+                            <i class="fa fa-rss" aria-hidden="true"></i><span>Latest News <a href="#">New</a></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xs-12 hidden-sm">
+                        <div class="wrapper_first_icon">
+                            <i class="fa fa-map-marker"></i><span>Get Appointment</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xs-12 hidden-sm">
+                        <div class="wrapper_first_icon">
+                            <i class="fa fa-phone"></i><span>Contact our Office</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xs-12 hidden-sm">
+                        <div class="wrapper_first_icon">
+                            <i class="fa fa-rss" aria-hidden="true"></i><span>Latest News <a href="#">New</a></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer_wrapper_second">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
+                        <div class="wrapper_second_about">
+                            <h4>About Us</h4>
+                            <div class="abotus_content">
+                                <p>Proin gravida nibh vel velit auctr aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit aks consequat vel velit auctor....</p>
+                            </div>
+                            <div class="aboutus_link">
+                                <a href="#">Read More<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                            </div>
+                            <ul class="aboutus_social_icons">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                                </li>
+                                <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
+                        <div class="wrapper_second_useful">
+                            <h4>Useful Link</h4>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Ipsum. Proin gravida nibh vel</a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Auctor aliquet. Aenean </a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Din, lorem quis bibendum </a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Nisi elit consequat ipsum,</a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Sagittis sem nibh id elit. </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
+                        <div class="wrapper_second_blog">
+                            <h4>From the Blog</h4>
+                            <div class="blog_wrapper1">
+                                <div class="blog_image">
+                                    <img src="images/home/home-2/blog-img1.png" class="img-responsive" alt="blog-img1_img" />
+                                </div>
+                                <div class="blog_text">
+                                    <h5><a href="#">Last Booking Registration Date</a></h5>
+                                    <div class="blog_date"><i class="fa fa-calendar-o" aria-hidden="true"></i>June 28, 2018-19</div>
+                                </div>
+                            </div>
+                            <div class="blog_wrapper2">
+                                <div class="blog_image">
+                                    <img src="images/home/home-2/blog-img2.png" class="img-responsive" alt="blog-img2_img" />
+                                </div>
+                                <div class="blog_text">
+                                    <h5><a href="#">Learn Every Thing you Want</a></h5>
+                                    <div class="blog_date"><i class="fa fa-calendar-o" aria-hidden="true"></i>June 28, 2018-19</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12 col-sm-6">
+                        <div class="wrapper_second_contact">
+                            <h4>Contact Us</h4>
+                            <ul>
+                                <li><i class="fa fa-map-marker"></i>
+                                    <p>16122 Collins Street West
+                                        <br>Victoria 8007 Australia.
+                                    </p>
+                                </li>
+                                <li><i class="fa fa-phone"></i>
+                                    <p>+1 854 584 5475
+                                        <br>+1 547 547 5487
+                                    </p>
+                                </li>
+                                <li><i class="fa fa-envelope"></i><a href="#">university@mail.com</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer end -->
+
+    <!-- copyright_wrapper start -->
+    <div class="copyright_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                    <div class="copyright_content">
+                        <p>© Copyright 2018-19 by <a href="http://webstrot.com/"> Webstrot </a> - all right reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- copyright_wrapper end -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <!-- Bootstrap js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/megnify.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <!-- Revolution Slider js -->
+    <script src="js/plugin/rs_slider/jquery.themepunch.revolution.min.js"></script>
+    <script src="js/plugin/rs_slider/jquery.themepunch.tools.min.js"></script>
+    <script src="js/plugin/rs_slider/revolution.addon.snow.min.js"></script>
+    <script src="js/plugin/rs_slider/revolution.extension.actions.min.js"></script>
+    <script src="js/plugin/rs_slider/revolution.extension.carousel.min.js"></script>
+    <script src="js/plugin/rs_slider/revolution.extension.kenburn.min.js"></script>
+    <script src="js/plugin/rs_slider/revolution.extension.layeranimation.min.js"></script>
+    <script src="js/plugin/rs_slider/revolution.extension.migration.min.js"></script>
+    <script src="js/plugin/rs_slider/revolution.extension.navigation.min.js"></script>
+    <script src="js/plugin/rs_slider/revolution.extension.parallax.min.js"></script>
+    <script src="js/plugin/rs_slider/revolution.extension.slideanims.min.js"></script>
+    <script src="js/plugin/rs_slider/revolution.extension.video.min.js"></script>
+
+    <!-- Portfolio Filter js -->
+    <script src="js/jquery.shuffle.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <!-- Counter Pie Chart js -->
+    <script src="js/jquery.easypiechart.min.js"></script>
+    <!-- Magnific Popup js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- Owl Carousel js -->
+    <script src="js/owl.carousel.js"></script>
+    <!-- wow js -->
+    <script src="js/wow.js"></script>
+    <!-- portfolio filter js -->
+    <script src="js/portfolio.js"></script>
+    <!-- homepage js -->
+    <script src="js/homepage.js"></script>
+    <!-- Custom js -->
+    <script src="js/custom.js"></script>
+    <script src="js/shop.js"></script>
+    <!-- slider custom js Start -->
+    <script>
+        var tpj = jQuery;
+
+        var revapi1052;
+        tpj(document).ready(function() {
+            if (tpj("#rev_slider_1052_1").revolution == undefined) {
+                revslider_showDoubleJqueryError("#rev_slider_1052_1");
+            } else {
+                revapi1052 = tpj("#rev_slider_1052_1").show().revolution({
+                    sliderType: "standard",
+                    jsFileLocation: "revolution/js/",
+                    sliderLayout: "fullscreen",
+                    dottedOverlay: "none",
+                    delay: 9000,
+                    navigation: {
+                        keyboardNavigation: "on",
+                        keyboard_direction: "horizontal",
+                        mouseScrollNavigation: "off",
+                        mouseScrollReverse: "default",
+                        onHoverStop: "off",
+                        touch: {
+                            touchenabled: "on",
+                            swipe_threshold: 75,
+                            swipe_min_touches: 50,
+                            swipe_direction: "horizontal",
+                            drag_block_vertical: false
+                        },
+                        arrows: {
+                            style: "uranus",
+                            enable: true,
+                            hide_onmobile: true,
+                            hide_onleave: true,
+                            tmp: '',
+                            left: {
+                                h_align: "left",
+                                v_align: "center",
+                                h_offset: 0,
+                                v_offset: 10
+                            },
+                            right: {
+                                h_align: "right",
+                                v_align: "center",
+                                h_offset: 0,
+                                v_offset: 10
+                            }
+                        },
+                        bullets: {
+                            enable: false,
+                            hide_onmobile: false,
+                            hide_under: 1024,
+                            style: "hephaistos",
+                            hide_onleave: false,
+                            direction: "horizontal",
+                            h_align: "center",
+                            v_align: "bottom",
+                            h_offset: 0,
+                            v_offset: 40,
+                            space: 10,
+                            tmp: ''
+                        }
+                    },
+                    responsiveLevels: [1240, 1024, 778, 480],
+                    visibilityLevels: [1240, 1024, 778, 480],
+                    gridwidth: [1400, 1240, 778, 480],
+                    gridheight: [868, 768, 960, 720],
+                    lazyType: "none",
+                    shadow: 0,
+                    spinner: "off",
+                    stopLoop: "on",
+                    stopAfterLoops: 0,
+                    stopAtSlide: 1,
+                    shuffle: "off",
+                    autoHeight: "off",
+                    fullScreenAutoWidth: "off",
+                    fullScreenAlignForce: "off",
+                    fullScreenOffsetContainer: "",
+                    fullScreenOffset: "",
+                    disableProgressBar: "on",
+                    hideThumbsOnMobile: "off",
+                    hideSliderAtLimit: 0,
+                    hideCaptionAtLimit: 0,
+                    hideAllCaptionAtLilmit: 0,
+                    debugMode: false,
+                    fallbacks: {
+                        simplifyAll: "off",
+                        nextSlideOnWindowFocus: "off",
+                        disableFocusListener: false,
+                    }
+                });
+            }
+        }); /*ready*/
+        
+        function changeQty(increase) {
+        var qty = parseInt($('.select_number').find("input").val());
+        if (!isNaN(qty)) {
+            qty = increase ? qty + 1 : (qty > 1 ? qty - 1 : 1);
+            $('.select_number').find("input").val(qty);
+        } else {
+            $('.select_number').find("input").val(1);
+        }
+    }
+
+    function goToByScroll(id) {
+        $('html,body').animate({
+            scrollTop: $("#" + id).offset().top
+        }, 'slow');
+    }
+
+    //------- Progress Bar ---------//
+
+    $('.progress_section').on('inview', function(event, visible, visiblePartX, visiblePartY) {
+        if (visible) {
+            $.each($('div.progress-bar'), function() {
+                $(this).css('width', $(this).attr('aria-valuenow') + '%');
+            });
+            $(this).off('inview');
+        }
+    });
+    </script>
+    <!-- slider custom js End -->
+
+    
+</body>
+
+</html>

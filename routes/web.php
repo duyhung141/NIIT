@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('homePage2');   
-})->name('Trang-chu');
+})->name('Home');
 
 Route::get('/products', function () {
     return view('productSinglePage'); 
