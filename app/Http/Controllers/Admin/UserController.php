@@ -20,7 +20,7 @@ class UserController extends Controller implements ICrud
     public function doAdd(Request $request){
         $data=$request->all();
         unset($data['_token']);
-        $data['password']=Hash::make($data['pasword']);
+        // $data['password']=Hash::make($data['pasword']);
         try {
             User::create($data);
         } catch (\Exception $e) {

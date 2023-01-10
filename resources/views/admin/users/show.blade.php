@@ -29,6 +29,7 @@
                 </td>
             </tr>
             @endforeach
+            <!-- {{$datas->links('vendor.pagination.bootstrap-4')}} -->
         </tbody>
     </table>
 </div>
